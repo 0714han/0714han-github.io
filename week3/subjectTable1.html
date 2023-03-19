@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- subjectTable1.html -->
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+  table, thead, tbody, tfoot, tr, th, td{ border: 2px solid black; border-collapse: collapse; text-align: center;}
+  .subject1 { background-color: orange;} .subject2 { background-color: lightgray;} .subject3 { background-color: lightblue;}  .subject4 { background-color: lightyellow;} .subject5 { background-color: lightgreen;} .subject6 { background-color: lightpink;} 
+  th, td { width:50px; }
+</style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
+<title>HTML5 시간표</title></head>
+<body>
+<table>
+<caption>&lt;표 1&gt; 시간표</caption>
+<thead>
+<tr><th> 시간 </th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> </tr> </thead>
+<tbody>
+  <tr><td>1교시</td> <td rowspan="2" class="subject1">과목1</td> <td rowspan="2" class="subject3">과목3</td> <td></td> <td></td> <td></td> </tr>
+  <tr><td>2교시</td>   <td></td> <td class="subject1">과목1</td> <td></td> </tr>
+  <tr><td>3교시</td> <td rowspan="2" class="subject2">과목2</td> <td></td> <td rowspan="2" class="subject3">과목3</td> <td></td> <td></td> </tr>
+  <tr><td>4교시</td>  <td></td>  <td></td> <td></td> </tr>
+  <tr><td>5교시</td> <td></td> <td class="subject2">과목2</td> <td rowspan="4" class="subject5">과목5</td> <td rowspan="2" class="subject4">과목4</td> <td></td> </tr>
+  <tr><td>6교시</td> <td></td> <td></td>   <td></td> </tr>
+  <tr><td>7교시</td> <td></td> <td></td>  <td class="subject6">과목6</td> <td></td> </tr>
+  <tr><td>8교시</td> <td></td> <td></td>  <td></td> <td></td> </tr>
+  <tr><td>9교시</td> <td></td> <td class="subject4">과목4</td> <td></td> <td></td> <td></td> </tr>
+  </tbody>
+  </table>
+  </body>
+  </html>
